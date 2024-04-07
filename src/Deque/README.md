@@ -9,7 +9,7 @@
   ```ts
   const deque = new Deque<number>();
   ```
-- <b>Methods</b>
+- **Methods**
   - **getFirst()**:
     Retrieves, but does not remove, the first element of this deque.
     This method differs from peekFirst( ) only in that it throws an exception
