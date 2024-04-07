@@ -17,23 +17,17 @@ interface AbstractDeque<T> {
 /**
  * A linear collection that supports element insertion and removal
  * at both ends. The name deque is short for "double ended queue" and
- * is usually pronounced "deck"
+ * is usually pronounced "deck".
  */
 export default class Deque<T> implements AbstractDeque<T> {
   private _head: DataNode<T> | null;
   private _tail: DataNode<T> | null;
   private _size: number = 0;
 
-  constructor(node?: DataNode<T>) {
-    if (node === undefined) {
-      this._head = null;
-      this._tail = null;
-      this._size = 0;
-    } else {
-      this._head = node;
-      this._tail = node;
-      this._size = 1;
-    }
+  constructor() {
+    this._head = null;
+    this._tail = null;
+    this._size = 0;
   }
 
   /**

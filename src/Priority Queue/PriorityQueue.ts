@@ -18,7 +18,6 @@ export default class PriorityQueue<T> implements AbstractQueue<T> {
   constructor(compareFn: (a: T, b: T) => number) {
     this._compareFn = compareFn;
     this.heap = [];
-    this.heap.sort();
     this._size = 0;
   }
 
